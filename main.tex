@@ -1,0 +1,217 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{enumitem}
+% Define margins
+\setlength{\topmargin}{-1.0cm}
+\setlength{\oddsidemargin}{0.1cm}
+\setlength{\textwidth}{16.5cm}
+\setlength{\textheight}{23.0cm}
+
+% Use Times New Roman font
+\usepackage{times}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref} 
+\urlstyle{rm}
+
+\renewcommand{\rmdefault}{ptm}
+
+\usepackage{graphicx} % LaTeX package to import graphics
+\graphicspath{{images/}} % Configuring the graphicx package
+
+% Define header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textbf{\textit{Week 10 Submission}}}
+\cfoot{\textbf{\textit{\thepage}}}
+\renewcommand{\headrulewidth}{0.7pt}
+\setlength{\headheight}{14pt}
+
+% Adjust section and subsection title formats
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\fontsize{14}{15}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{1em}{}
+
+% Define a style with no footer for the table of contents
+\fancypagestyle{nofooter}{%
+  \fancyfoot{}%
+}
+
+% To manage references
+\usepackage{natbib}
+\usepackage[labelfont=bf]{caption}
+
+\begin{document}
+
+% TITLE PAGE
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\center
+
+\vspace*{1\baselineskip}
+\includegraphics[width=0.15\textwidth]{images/UTS.png}\\
+\textsc{\LARGE University of Technology Sydney}\\[2.0cm]
+\textsc{\Large (32557) Enabling Enterprise Information Systems}\\[0.2cm]
+
+\HRule\\[0.6cm]
+{\huge\bfseries Intelligent Systems}\\[0.4cm]
+\HRule\\[10cm]
+
+\emph{by Team Super} \\
+{ Seoyoon Kim (25388442) [Group leader] \\}
+{ Jin Lee (25388733)  \\}
+{ Ariel Manueke (25207919) \\}
+{ Nonthawat Praisompong (25233750) \\}
+
+\vfill
+{\large\today}
+
+\vfill
+
+\end{titlepage}
+
+% TABLE OF CONTENTS
+
+\tableofcontents
+\thispagestyle{nofooter}
+\cleardoublepage
+
+\pagebreak
+
+% DOCUMENT CONTENT STARTS HERE
+% You can start writing your document content here.
+
+
+% Student %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\setcounter{page}{1}
+
+\section{Question 1}
+\subsection{The Application of Expert Systems in Enhancing Daily Dietary Choices}
+\label{sec:Question 1}
+
+\textbf{Introduction}\\
+\noindent Expert systems are a branch of artificial intelligence that utilize knowledge-based systems to emulate the decision-making ability of a human expert. By integrating rules and knowledge in a specific domain, expert systems provide users with high-level advice and guidance. This report explores the application of an expert system in daily life, specifically in improving dietary decisions, which is crucial for maintaining a healthy lifestyle \citep{question_1.1}.\\
+
+\noindent \textbf{The Need for Decision Support in Dietary Choices }\\
+Diet plays a significant role in overall health and well-being. However, making informed dietary choices can be challenging due to the complexities of nutritional values, personal health conditions, and lifestyle preferences. The abundance of available food options and the varying nutritional content make it difficult for individuals to assess the best choices for their health.\\
+
+\noindent \textbf{Expert System Overview }\\
+An expert system for dietary decisions operates by integrating a comprehensive database of food items, their nutritional content, and dietary guidelines. It also incorporates individual user profiles, which include personal health data, dietary restrictions, and preferences. The system uses a rule-based engine to process this information and provides personalized meal suggestions that align with the user’s health objectives \citep{question_1.2}. \\
+
+\noindent \textbf{System Architecture }
+\begin{enumerate}
+    \item \textbf{Knowledge Base:} Contains detailed data on nutritional values of various food items and expert knowledge on dietary guidelines.
+    \item \textbf{Inference Engine:} Applies logical rules to the information in the knowledge base to infer and recommend optimal dietary choices.
+    \item \textbf{User Interface:} Allows users to input personal data, dietary preferences, and health goals, and displays personalized meal suggestions.
+\end{enumerate}
+
+\noindent \textbf{Benefits of the Dietary Expert System }
+\begin{itemize}
+    \item \textbf{Personalization:} Tailors dietary suggestions to individual health conditions and preferences, thereby enhancing the effectiveness of diet plans.
+    \item \textbf{Convenience:} Simplifies the decision-making process by providing quick and reliable dietary choices, saving time and effort.
+    \item \textbf{Educational Value:} Offers insights into nutritional information, helping users to become more knowledgeable about their dietary habits.
+    \item \textbf{Health Improvement:} Encourages healthier eating patterns, which can lead to better overall health outcomes.
+\end{itemize}
+\noindent \textbf{Implementation Considerations}
+\begin{itemize}
+    \item \textbf{Accuracy of Data:} Ensures the reliability of the dietary recommendations.
+    \item \textbf{User Engagement:} Designs an intuitive and engaging user interface to encourage regular use.
+    \item \textbf{Privacy and Security:} Implements robust measures to protect sensitive personal health data.
+\end{itemize}
+
+\noindent \textbf{Conclusion}\\
+The integration of expert systems into daily dietary decision-making can significantly enhance the quality of life by promoting healthier eating habits through personalized and scientifically informed choices. This not only supports individual health goals but also contributes to broader public health outcomes by educating users on nutritional best practices. \\
+
+
+
+\pagebreak %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\setcounter{page}{3}
+
+\section{Question 2}
+\subsection{Intelligent Algorithms and IoT Sensors: Enhancing Fire Evacuation Protocols in High-Rise Buildings}
+\label{sec:Question 2}
+
+\noindent Expert systems integrated with the Internet of Things (IoT) can significantly enhance fire evacuation strategies and the effective use of Fire Exit Indicators in high-rise buildings during emergencies. These advanced systems leverage real-time data monitoring, intelligent algorithms, and predictive analytics to guide occupants safely and efficiently.\\
+
+\noindent One innovative approach utilizes a hybrid algorithm that combines Emperor Penguin Colony Optimization and Particle Swarm Optimization to determine optimal evacuation routes based on real-time environmental data from IoT sensors. This method ensures swift and safe evacuation while optimizing energy consumption and operational costs \citep{question_2.1}\\
+
+\noindent Regarding Fire Exit Indicators specifically, expert systems can provide the following advantages:
+\begin{enumerate}
+    \item Collect and analyze real-time fire data from IoT sensors to dynamically identify the safest emergency exit routes.
+   \item Provide personalized evacuation paths and instructions based on occupants' locations, physical conditions, and other relevant factors.
+   \item Predict fire and smoke propagation patterns to actively control Fire Exit Indicators, effectively guiding occupants to the safest exits.
+    \item Assess congestion levels and risk factors around emergency exits by integrating multiple sensor data sources, and update Fire Exit Indicators accordingly in real-time.
+    \item Adapt the operation modes of Fire Exit Indicators based on fire containment and rescue progress, ensuring accurate guidance throughout the emergency.
+\end{enumerate}
+
+\noindent Moreover, the integration of IoT technologies enables real-time monitoring of fire environments and occupant status, facilitating dynamic adjustments to evacuation plans as conditions evolve, ensuring occupants follow the safest possible routes \citep{question_2.2}\\
+
+\noindent Personalized evacuation models account for individual characteristics and real-time exit congestion, mitigating bottlenecks and enhancing overall occupant safety \citep{question_2.3}. Specialized strategies, such as smart elevator-aided evacuation, also cater to vulnerable populations like the elderly \citep{question_2.4}\\
+
+\noindent In conclusion, the synergy between expert systems, IoT, and intelligent algorithms represents a significant advancement in building emergency management. These systems improve safety outcomes and evacuation efficiency by providing occupants with timely, accurate, and tailored information through intelligent control of Fire Exit Indicators and dynamic routing during high-rise building fires.\\
+
+
+
+
+\pagebreak
+
+% Jin%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{page}{5}
+\section{Question 3}
+\subsection{Shopping Bot Websites}
+
+
+\subsubsection{Ebay Shopbot} 
+\noindent Link : https://www.ebayinc.com/stories/news/say-hello-to-ebay-shopbot-beta/\\
+\noindent Ebay Shopbot is an artificial intelligent (AI) personal shopping assistant that made its debut on Meta’s (known as Facebook) Messenger app. The system is pretty much like a messenger app where customer can just type products that they wanted and the system will show recommendations of relatable products that customer can view and order on Ebay website. The usage is very easy and clean with several questions being asked by the bot to analyze and understand customer’s need. Moreover, this shopbot, has several options of answers that are possible. One major downside is the range of products shown is quite limited inside the chat and customers have to swipe to see other products and be able to either view the item details or view more like the related item being shown. When a customer choose the view item, it will redirect customer’s screen to the Ebay product page to be able to order it. For example when ordering a smart tv, customer can just type the key words and Ebay will shown the recommended products for the TVs, and we can even ask more specific questions such as screen size and colors. When the list showed, customer can view the specific product or choose show all. When it was launched in 2016, Ebay Shopbot still required more improvements, but it really helped customer and business to better understand customer’s intetions and make personalized recommendations \citep{question_3.1}. Unfortunetaly, this bot cannot be found anymore at Ebay’s website.\\
+
+\subsubsection{5Gifts4Her} 
+\noindent Link : https://5gifts4her.weebly.com/about.html\\
+\noindent This website is focusing on giving a gift for women and the content is updated weekly. Currently their chatbot is still underdevelopment, but as promised, the chatbot will provide dynamic gift recommendation based on user’s profile or more personalized customization. This chat bot also designed to be integrated into Messenger so that customers can easily order the gift products by just using chat in Messenger. This chatbot is quite unique as it focused primarily on giving a product recommendation as a gift, so the AI and NLP technology behind it really tried to learn the customer’s personal profile to give the most suitable recommendations. Although this concept is focusing on giving gift for women, but in case of buying a television as a gift (or self-reward) can be also integrated to this chatbot. The results that chatbot show is indeed suitable for a single attribute of product that having light information attached so that customer can see a product grouped by its similarity and personized customizations \citep{question_3.2}.\\
+
+
+
+
+
+
+
+
+
+% PIP, Add your 2 points here
+\subsubsection{Rufus } 
+\noindent Link : https://www.aboutamazon.com/news/retail/amazon-rufus \\
+\noindent Amazon has launched a new shopping chatbot that uses AI to assist shopping customers, which they expect will improve customer shopping experiences \citep{question_3.3}. Customers have received various suggestions and recommendations directly related to the Amazon product (Lobe., 2024). Moreover, Rufus can compare products for customers \citep{question_3.3}. Amazon has released a beta version and plans to launch the services broadly. Customers who use the Amazon application in the US are the first selected after all the rest of the US. Regarding the features, Rufus has integrated a search bar, allowing customers to type and speak to customers. Also, a chat box on the bottom of the screen allows them to expand their result \citep{question_3.3}. Moreover, Rufus is smart enough to answer specific questions generated from product details, community Q\&A and customer reviews \citep{question_3.3}). For instance, is this jacket washable and what is a good gift for Valentine's Day \citep{question_3.4}?\\
+
+% PIP, Add your 2 points here
+\subsubsection{Best Buy chatbot}
+\noindent Link : https://www.bestbuy.com/contact-us\\
+\noindent According to Kan \citep{question_3.6}, the Google Gemini AI Model has been used to develop Best Buy AI “Self-Service Support”. \\
+
+\noindent All customers can get assistance from the Generative AI-powered virtue assistance or  Self-Service Support \citep{question_3.5}. Customers will be served better and faster assistance from customer care agents, such as precise troubleshooting product problems, rescheduling, order deliveries and managing software until subscription membership \citep{question_3.5}. In addition, this AI agent is available on BestBuy.com, a mobile application that includes phones \citep{question_3.6}. Furthermore, Best Buy customer care agents can utilise new gen-AI, which enriches their interaction with customers between inter platforms \citep{question_3.7}. To reduce agent workload, this tool is designed to enhance concentration on connecting with customers \citep{question_3.7}. During the communication, gen-AI can evaluate and summarise customers' moods, and the agent can give recommendations that sync with the specific situation for each customer \citep{question_3.7}. \\
+
+
+
+
+
+
+\pagebreak
+% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% Use Leeds Harvard referencing template
+\bibliographystyle{lsharvard}
+% Add here the bib file with your references
+\bibliography{references}
+	
+\def\UrlBreaks{\do\/\do-}
+
+\clearpage
+\end{document}
